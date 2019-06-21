@@ -1,0 +1,23 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+
+  <PropertyGroup>
+    <TargetFrameworks>net35;net40;net45</TargetFrameworks>
+    
+    <Version>1.0.0</Version>
+    <Product>SharpDX</Product>
+    <AssemblyTitle>SharpDX</AssemblyTitle>
+    <Title>SharpDX</Title>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Mapping.xml" />
+    <None Include="Mapping-core.xml" />
+    <None Include="Direct3D\Mapping.xml" />
+    <None Include="Multimedia\Mapping.xml" /> 
+  </ItemGroup> 
+
+  <Import Project="../MappingFiles.props" />
+  
+</Project>

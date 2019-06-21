@@ -1,0 +1,22 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+
+  <PropertyGroup>
+    <TargetFrameworks>net35;net40;net45</TargetFrameworks>
+
+    <Version>1.0.0</Version>
+    <Product>SharpDX.Direct3D11</Product>
+    <AssemblyTitle>SharpDX.Direct3D11</AssemblyTitle>
+    <Title>SharpDX.Direct3D11</Title>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Mapping.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharpDX\SharpDX.csproj" />
+    <ProjectReference Include="..\SharpDX.DXGI\SharpDX.DXGI.csproj" />
+  </ItemGroup>
+
+</Project>

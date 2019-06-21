@@ -1,0 +1,21 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+
+  <PropertyGroup>
+    <TargetFrameworks>net35;net40;net45</TargetFrameworks>
+
+    <Version>1.0.0</Version>
+    <Product>SharpDX.D3DCompiler</Product>
+    <AssemblyTitle>SharpDX.D3DCompiler</AssemblyTitle>
+    <Title>SharpDX.D3DCompiler</Title>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Mapping.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharpDX\SharpDX.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpDX", "SharpDX\SharpDX.csproj", "{7DBA737D-0508-4CF1-8541-F4C9B0858A8D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpDX.DXGI", "SharpDX.DXGI\SharpDX.DXGI.csproj", "{177117F3-F896-40D0-8A2D-81F923E9ADF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{15E2D2BD-7F4A-4A73-81F4-E95395C3DECB}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.build.props = Directory.build.props
+		Directory.build.targets = Directory.build.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{E66D4191-B881-4525-98FE-69805FC64971}"
+	ProjectSection(SolutionItems) = preProject
+		Mapping.xml = Mapping.xml
+		MappingFiles.props = MappingFiles.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpDX.D3DCompiler", "SharpDX.D3DCompiler\SharpDX.D3DCompiler.csproj", "{16F7B217-5D7A-4F8F-80A9-D48815FC250B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpDX.Direct3D11", "SharpDX.Direct3D11\SharpDX.Direct3D11.csproj", "{02B95673-84E5-4536-90BA-C966D37E9353}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpDX.Mathematics", "SharpDX.Mathematics\SharpDX.Mathematics.csproj", "{7431682C-60E6-493A-9B55-1FBB04EB41A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{C80BFE2E-7056-4544-9A6D-0819458D372E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAPP", "TestAPP\TestAPP.csproj", "{38F04717-DAAC-4515-99EF-123CF94FA930}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DBA737D-0508-4CF1-8541-F4C9B0858A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBA737D-0508-4CF1-8541-F4C9B0858A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBA737D-0508-4CF1-8541-F4C9B0858A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBA737D-0508-4CF1-8541-F4C9B0858A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{177117F3-F896-40D0-8A2D-81F923E9ADF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{177117F3-F896-40D0-8A2D-81F923E9ADF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{177117F3-F896-40D0-8A2D-81F923E9ADF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{177117F3-F896-40D0-8A2D-81F923E9ADF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16F7B217-5D7A-4F8F-80A9-D48815FC250B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F7B217-5D7A-4F8F-80A9-D48815FC250B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F7B217-5D7A-4F8F-80A9-D48815FC250B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F7B217-5D7A-4F8F-80A9-D48815FC250B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B95673-84E5-4536-90BA-C966D37E9353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B95673-84E5-4536-90BA-C966D37E9353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B95673-84E5-4536-90BA-C966D37E9353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B95673-84E5-4536-90BA-C966D37E9353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7431682C-60E6-493A-9B55-1FBB04EB41A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7431682C-60E6-493A-9B55-1FBB04EB41A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7431682C-60E6-493A-9B55-1FBB04EB41A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7431682C-60E6-493A-9B55-1FBB04EB41A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38F04717-DAAC-4515-99EF-123CF94FA930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F04717-DAAC-4515-99EF-123CF94FA930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F04717-DAAC-4515-99EF-123CF94FA930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F04717-DAAC-4515-99EF-123CF94FA930}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7DBA737D-0508-4CF1-8541-F4C9B0858A8D} = {E66D4191-B881-4525-98FE-69805FC64971}
+		{177117F3-F896-40D0-8A2D-81F923E9ADF1} = {E66D4191-B881-4525-98FE-69805FC64971}
+		{16F7B217-5D7A-4F8F-80A9-D48815FC250B} = {E66D4191-B881-4525-98FE-69805FC64971}
+		{02B95673-84E5-4536-90BA-C966D37E9353} = {E66D4191-B881-4525-98FE-69805FC64971}
+		{7431682C-60E6-493A-9B55-1FBB04EB41A6} = {E66D4191-B881-4525-98FE-69805FC64971}
+		{38F04717-DAAC-4515-99EF-123CF94FA930} = {C80BFE2E-7056-4544-9A6D-0819458D372E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B998FB5-3E81-4054-8B1F-861AB352332C}
+	EndGlobalSection
+EndGlobal

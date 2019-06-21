@@ -1,0 +1,38 @@
+<Project>
+  <PropertyGroup>
+    
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks> 
+    <DefineConstants>$(DefineConstants);DIRECTX11_1;DIRECTX11_2;DirectX12</DefineConstants>
+    
+    <Authors>WDIDFU</Authors>
+    <Owners>WDIDFU</Owners>
+    <Copyright>Copyright (c) 2019 WDIDFU</Copyright> 
+
+    <SharpGenMacros>$(SharpGenMacros);DIRECTX11_1</SharpGenMacros>
+    <SharpGenGlobalNamespace>SharpDX</SharpGenGlobalNamespace>
+    <SharpGenGeneratedCodeFolder Condition="'$(TargetFramework)' == 'net35'">Generated/net35_codes</SharpGenGeneratedCodeFolder>
+    <SharpGenGeneratedCodeFolder Condition="'$(TargetFramework)' == 'net40'">Generated/net40_codes</SharpGenGeneratedCodeFolder>
+    <SharpGenGeneratedCodeFolder Condition="'$(TargetFramework)' == 'net45'">Generated/net45_codes</SharpGenGeneratedCodeFolder>
+    <SharpGenGenerateConsumerBindMapping>false</SharpGenGenerateConsumerBindMapping>
+    
+    <SharpGenIncludeAssemblyNameFolder>true</SharpGenIncludeAssemblyNameFolder>
+    <SharpGenOutputDirectory>$(MSBuildProjectDirectory)/../</SharpGenOutputDirectory>
+
+    <!--Output all assemblies into the same folder for the samples and to avoid copying assembly references all around for each project-->
+    <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+    <OutputPath>$(MSBuildThisFileDirectory)Bin\$(Configuration)\</OutputPath>
+  
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(UseWpf)' != 'true' ">
+     <PackageReference Include="SharpGenTools.Sdk" Version="1.1.3-ci489" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup> 
+    <SharpGenGlobalNamespaceOverrides Include="InterfaceArray" Override="ComArray" />
+    <SharpGenGlobalNamespaceOverrides Include="MemoryHelpers"  Override="Utilities" />
+    <SharpGenGlobalNamespaceOverrides Include="BooleanHelpers" Override="Utilities" />
+    <SharpGenGlobalNamespaceOverrides Include="StringHelpers"  Override="Utilities" />
+  </ItemGroup>
+  
+</Project>

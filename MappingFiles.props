@@ -1,0 +1,7 @@
+<Project>
+    <ItemGroup> 
+      <SharpGenMapping Include="$(MSBuildThisFileDirectory)Mapping.xml" />
+      <SharpGenMapping Include="$(MSBuildThisFileDirectory)Mapping.Direct3D1x.xml" />
+      <SharpGenMapping Include="$(MSBuildThisFileDirectory)SharpDX*/**/Mapping*.xml" /> 
+    </ItemGroup> 
+</Project>
