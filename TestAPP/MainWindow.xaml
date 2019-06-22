@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="299,77,0,0" VerticalAlignment="Top" Width="107" Height="47" Click="Button_Click"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Capture" HorizontalAlignment="Center" VerticalAlignment="Center" Width="107" Height="47" Click="Button_Click"/>
+        <Image x:Name="image" Grid.Row="1" Margin="20" Stretch="Uniform"/>
     </Grid>
 </Window>
